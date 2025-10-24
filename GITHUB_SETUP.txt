@@ -1,0 +1,248 @@
+🚀 GITHUB SETUP GUIDE - Stock Dashboard
+================================================================================
+
+This guide will help you commit your Stock Dashboard to GitHub.
+
+================================================================================
+STEP 1: PREPARE YOUR PROJECT
+================================================================================
+
+1. Create a project folder on your computer:
+   
+   mkdir stock-dashboard
+   cd stock-dashboard
+
+2. Copy these files into the folder:
+   ✓ stock_dashboard.py
+   ✓ stock_dashboard_demo.py
+   ✓ requirements.txt
+   ✓ README_GITHUB.md (rename to README.md)
+   ✓ .gitignore
+   ✓ LICENSE
+
+3. Rename README_GITHUB.md to README.md:
+   
+   # Windows
+   rename README_GITHUB.md README.md
+   
+   # Mac/Linux
+   mv README_GITHUB.md README.md
+
+4. Edit README.md and replace placeholders:
+   - Replace "yourusername" with your GitHub username
+   - Replace "Your Name" with your actual name
+   - Add your email/Twitter if you want
+
+================================================================================
+STEP 2: CREATE GITHUB REPOSITORY
+================================================================================
+
+1. Go to GitHub.com and sign in (create account if needed)
+
+2. Click the "+" icon in top-right → "New repository"
+
+3. Fill in the details:
+   Repository name: stock-dashboard
+   Description: Real-time stock price dashboard with financial metrics
+   Public or Private: Your choice
+   
+   ⚠️ DO NOT initialize with README, .gitignore, or license
+   (We already have these files)
+
+4. Click "Create repository"
+
+5. Keep this page open - you'll need the URL
+
+================================================================================
+STEP 3: INITIALIZE GIT LOCALLY
+================================================================================
+
+Open terminal in your project folder and run:
+
+# Initialize git repository
+git init
+
+# Add all files to staging
+git add .
+
+# Commit the files
+git commit -m "Initial commit: Stock dashboard with real-time data"
+
+# Rename branch to main (if needed)
+git branch -M main
+
+================================================================================
+STEP 4: CONNECT TO GITHUB AND PUSH
+================================================================================
+
+Replace YOUR_USERNAME with your actual GitHub username:
+
+# Add remote repository
+git remote add origin https://github.com/YOUR_USERNAME/stock-dashboard.git
+
+# Push to GitHub
+git push -u origin main
+
+If prompted for credentials:
+- Username: Your GitHub username
+- Password: Use a Personal Access Token (not your password!)
+
+================================================================================
+STEP 5: CREATE PERSONAL ACCESS TOKEN (if needed)
+================================================================================
+
+If GitHub asks for credentials:
+
+1. Go to: GitHub.com → Settings → Developer settings → Personal access tokens → Tokens (classic)
+2. Click "Generate new token (classic)"
+3. Give it a name: "Stock Dashboard"
+4. Select scopes: Check "repo" (all sub-options)
+5. Click "Generate token"
+6. COPY THE TOKEN (you won't see it again!)
+7. Use this token as your password when pushing
+
+Alternative: Use GitHub Desktop or GitHub CLI (easier!)
+
+================================================================================
+STEP 6: VERIFY YOUR REPOSITORY
+================================================================================
+
+1. Go to: https://github.com/YOUR_USERNAME/stock-dashboard
+2. You should see all your files!
+3. The README.md will be displayed on the main page
+
+================================================================================
+OPTIONAL: ADD SCREENSHOTS
+================================================================================
+
+To make your README look professional:
+
+1. Create a "screenshots" folder in your project
+2. Run the dashboard and take screenshots
+3. Save them as: dashboard.png, comparison.png, metrics.png
+4. Add them to git:
+   
+   git add screenshots/
+   git commit -m "Add screenshots"
+   git push
+
+================================================================================
+FUTURE UPDATES
+================================================================================
+
+When you make changes to your code:
+
+# Check what changed
+git status
+
+# Add changes
+git add .
+
+# Commit with a message
+git commit -m "Add feature: historical price charts"
+
+# Push to GitHub
+git push
+
+================================================================================
+COMMON GIT COMMANDS
+================================================================================
+
+# See current status
+git status
+
+# See commit history
+git log --oneline
+
+# Create a new branch
+git checkout -b feature/new-feature
+
+# Switch branches
+git checkout main
+
+# Pull latest changes
+git pull
+
+# Clone your repo to another computer
+git clone https://github.com/YOUR_USERNAME/stock-dashboard.git
+
+================================================================================
+ALTERNATIVE: USE GITHUB DESKTOP
+================================================================================
+
+Easier for beginners:
+
+1. Download GitHub Desktop: https://desktop.github.com/
+2. Install and sign in
+3. File → Add Local Repository → Select your folder
+4. Click "Publish repository" button
+5. Done! Much easier than command line
+
+================================================================================
+PROJECT STRUCTURE ON GITHUB
+================================================================================
+
+Your repository should look like:
+
+stock-dashboard/
+├── README.md                    ← Main documentation (shows on GitHub)
+├── LICENSE                      ← MIT License
+├── .gitignore                   ← Files to ignore
+├── requirements.txt             ← Dependencies
+├── stock_dashboard.py           ← Main application
+├── stock_dashboard_demo.py      ← Demo version
+└── screenshots/                 ← (Optional) Dashboard images
+    ├── dashboard.png
+    ├── comparison.png
+    └── metrics.png
+
+================================================================================
+MAKE YOUR README STAND OUT
+================================================================================
+
+Add badges to your README (they look professional!):
+
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/streamlit-1.31.0-red.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+These appear at the top and show: Python version, Streamlit version, License
+
+================================================================================
+TIPS FOR A GREAT REPOSITORY
+================================================================================
+
+✓ Write a clear README with screenshots
+✓ Include a license (MIT is most common)
+✓ Add a .gitignore file (already provided)
+✓ Use meaningful commit messages
+✓ Add topics/tags to your repo (streamlit, finance, dashboard, stocks)
+✓ Pin your best repositories on your GitHub profile
+
+================================================================================
+NEED HELP?
+================================================================================
+
+Git basics: https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+GitHub docs: https://docs.github.com/en/get-started
+GitHub Desktop: https://desktop.github.com/
+
+Or just Google: "how to push to github" - tons of tutorials!
+
+================================================================================
+QUICK REFERENCE COMMANDS
+================================================================================
+
+# First time setup
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/USERNAME/REPO.git
+git push -u origin main
+
+# Regular updates
+git add .
+git commit -m "Description of changes"
+git push
+
+================================================================================
